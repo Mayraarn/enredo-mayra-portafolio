@@ -118,6 +118,16 @@ Esta web es de Modernè, un estudio de Londres dedicado al branding de marcas.
 - Arregló la tabla de problemas y soluciones, que estaba a medio formatear.
 - Corrigió detalles de ortografía y mayúsculas, sin cambiar el contenido.
 
+### 6. Fotos que no se veían en GitHub Pages
+
+**Prompt:**
+> sos, lo subi a github pages y no se ven las fotos https://mayraarn.github.io/enredo-mayra-portafolio/proyecto-1.html
+
+**Qué se hizo:**
+- Comparó las rutas de las fotos en el código con los archivos publicados en el repositorio.
+- Encontró que las fotos estaban sueltas en la raíz y no dentro de la carpeta `img/`, que es donde las buscan las páginas.
+- Me explicó cómo subir la carpeta `img` completa desde GitHub. No hubo que cambiar código.
+
 ---
 
 ## Problemas y soluciones
@@ -128,6 +138,8 @@ Esta web es de Modernè, un estudio de Londres dedicado al branding de marcas.
 | En celular el footer se veía distinto al diseño de Figma: todo en una columna y alineado a la izquierda. | Lo armé con `grid-template-areas`: el logo arriba en el centro, los enlaces a la izquierda y la dirección a la derecha, con las medidas de Figma (22 px de margen y 18 px de letra). |
 | En mobile el logo del footer medía 45 px de alto en vez de 40 px, y eso bajaba todo lo demás. | El SVG tomaba la proporción de sus atributos `width` y `height`, no la del dibujo. Le di un alto fijo (`height: 40px`). |
 | Los cambios del footer había que hacerlos dos veces. | El inicio usa `style.css` y las demás páginas usan `paginas.css`, así que el arreglo va en los dos archivos. |
+| Al subir el sitio a GitHub Pages no se veían las fotos. Las páginas las buscan en la carpeta `img/` (por ejemplo `img/p1-principal.jpg`), pero las subí sueltas en la raíz del repositorio, así que la carpeta `img` no existía y las fotos daban error 404. | Subí la carpeta `img` completa (arrastrando la carpeta, no las fotos sueltas) con **Add file → Upload files**, para que las rutas coincidieran con las del código. |
+
 
 ---
 
