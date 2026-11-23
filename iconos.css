@@ -1,0 +1,17 @@
+/* Íconos animados: al pasar el cursor (o enfocar con teclado) el trazo se dibuja
+   de nuevo en bucle, igual que la variante "hover" del Figma (2 s, pathLength=1) */
+.ico { display: block; overflow: visible; }
+.trazo-icono { stroke-dasharray: 1 1; stroke-dashoffset: 0; }
+
+a:hover .ico-logo .trazo-icono, a:focus-visible .ico-logo .trazo-icono, .ico-logo:hover .trazo-icono { animation: dibujar-logo 2s linear infinite; }
+a:hover .ico-sobre-mi .trazo-icono, a:focus-visible .ico-sobre-mi .trazo-icono, .ico-sobre-mi:hover .trazo-icono { animation: dibujar-sobre-mi 2s linear infinite; }
+a:hover .ico-proyectos .trazo-icono, a:focus-visible .ico-proyectos .trazo-icono, .ico-proyectos:hover .trazo-icono { animation: dibujar-proyectos 2s linear infinite; }
+a:hover .ico-contacto .trazo-icono, a:focus-visible .ico-contacto .trazo-icono, .ico-contacto:hover .trazo-icono { animation: dibujar-contacto 2s linear infinite; }
+a:focus-visible { outline: none; }
+
+@keyframes dibujar-logo      { 0% { animation-timing-function: ease-out; stroke-dasharray: 0 1; visibility: hidden; } 51.17%  { stroke-dasharray: 1 1; visibility: visible; } 100% { stroke-dasharray: 1 1; visibility: visible; } }
+@keyframes dibujar-sobre-mi  { 0% { animation-timing-function: ease-out; stroke-dasharray: 0 1; visibility: hidden; } 51.023% { stroke-dasharray: 1 1; visibility: visible; } 100% { stroke-dasharray: 1 1; visibility: visible; } }
+@keyframes dibujar-proyectos { 0% { animation-timing-function: ease-out; stroke-dasharray: 0 1; visibility: hidden; } 50.715% { stroke-dasharray: 1 1; visibility: visible; } 100% { stroke-dasharray: 1 1; visibility: visible; } }
+@keyframes dibujar-contacto  { 0% { animation-timing-function: linear; stroke-dasharray: 0.061 1; } 52.053% { stroke-dasharray: 1 1; } 100% { stroke-dasharray: 1 1; } }
+
+@media (prefers-reduced-motion: reduce) { .trazo-icono { animation: none !important; } }

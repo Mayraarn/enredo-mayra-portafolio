@@ -1,0 +1,19 @@
+/* Adobe Fonts: Futura PT (proyecto web de Mayra). Va primero porque @import lo exige. */
+@import url("https://use.typekit.net/ohw2yni.css");
+@import url("https://use.typekit.net/qdg7dkl.css"); /* Kolo LP */
+
+/* Fuentes del diseño. Copia los archivos a la carpeta "fonts" con estos nombres
+   (basta con .woff2; los demás formatos son opcionales). Si no están, el navegador
+   usa la letra de reemplazo definida en cada hoja de estilos. */
+@font-face { font-family: 'Futura PT Cond'; font-weight: 400; font-style: normal; font-display: swap;
+  src: local('Futura PT Cond Book'), local('FuturaPT-CondBook'),
+       url('fonts/FuturaPT-CondBook.woff2') format('woff2'), url('fonts/FuturaPT-CondBook.woff') format('woff'),
+       url('fonts/FuturaPT-CondBook.otf') format('opentype'), url('fonts/FuturaPT-CondBook.ttf') format('truetype'); }
+@font-face { font-family: 'Kolo LP Alternates'; font-weight: 400; font-style: normal; font-display: swap;
+  src: local('Kolo LP Alternates'), local('KoloLP-Alternates'),
+       url('fonts/KoloLP-Alternates.woff2') format('woff2'), url('fonts/KoloLP-Alternates.woff') format('woff'),
+       url('fonts/KoloLP-Alternates.otf') format('opentype'), url('fonts/KoloLP-Alternates.ttf') format('truetype'); }
+@font-face { font-family: 'Kolo LP Narrow'; font-weight: 400; font-style: normal; font-display: swap;
+  src: local('Kolo LP Narrow'), local('KoloLP-Narrow'),
+       url('fonts/KoloLP-Narrow.woff2') format('woff2'), url('fonts/KoloLP-Narrow.woff') format('woff'),
+       url('fonts/KoloLP-Narrow.otf') format('opentype'), url('fonts/KoloLP-Narrow.ttf') format('truetype'); }
