@@ -5,7 +5,7 @@
 ## Links
 
 - **Figma:** [Mayra_Rojas](https://www.figma.com/design/L9RpAE1Ldrwp0iBiD6lh7e/Mayra_Rojas?node-id=2-3&t=4RawuXpS1ifvomIv-1)
-- **GitHub Pages:**
+- **GitHub Pages:** https://mayraarn.github.io/enredo-mayra-portafolio/
 
 ---
 
